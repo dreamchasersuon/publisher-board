@@ -14,7 +14,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "stylelint": "npx stylelint --fix 'src/**/*.css'",
+    "format": "npx prettier src/**/*.js",
+    "eslint": "npx eslint --quiet 'src/**/*.js'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +33,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@arkweid/lefthook": "^0.7.1",
+    "prettier": "^1.19.1",
+    "stylelint": "^13.2.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }

@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    lint:
+      run: yarn eslint
+    style:
+      run: yarn stylelint
+    format:
+      run: yarn format
