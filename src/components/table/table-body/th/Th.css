@@ -1,0 +1,34 @@
+tbody th {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.TableBody-enabled {
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  background-color: #54be00;
+  margin-right: 10px;
+}
+
+.TableBody-disabled {
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  background-color: #be0000;
+  margin-right: 10px;
+}
+
+.TableBody-cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0 10px 40px;
+  height: 42px;
+  color: #6d6d6d;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.TableBody-cell svg {
+  cursor: pointer;
+}

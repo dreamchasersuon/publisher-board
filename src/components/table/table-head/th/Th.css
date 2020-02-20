@@ -1,0 +1,39 @@
+.TableHead th {
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+}
+
+thead th:nth-last-child(1) {
+  width: 5%;
+}
+
+thead th:nth-last-child(2) {
+  width: 10%;
+}
+
+thead th:nth-last-child(7) {
+  width: 10%;
+}
+
+thead tr:last-child th:first-child {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-left: 1px solid #e5e5e5;
+}
+
+thead tr:last-child th:last-child {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.TableHead-cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 40px;
+  height: 42px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #666;
+}
