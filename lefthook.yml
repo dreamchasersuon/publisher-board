@@ -1,8 +1,12 @@
 pre-commit:
+  parallel: true
   commands:
     lint:
-      run: yarn eslint
+      glob: "*.js"
+      run: yarn eslint {staged_files}
     style:
-      run: yarn stylelint
+      glob: "*.css"
+      run: yarn stylelint {staged_files}
     format:
-      run: yarn format
+      glob: "*.js"
+      run: yarn format {staged_files}
