@@ -17,7 +17,8 @@
     "eject": "react-scripts eject",
     "stylelint": "npx stylelint --fix 'src/**/*.css'",
     "format": "npx prettier src/**/*.js",
-    "eslint": "npx eslint --quiet 'src/**/*.js'"
+    "eslint": "npx eslint --quiet 'src/**/*.js'",
+    "now-build": "yarn build && mv build dist"
   },
   "eslintConfig": {
     "extends": "react-app"
