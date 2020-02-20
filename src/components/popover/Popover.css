@@ -1,0 +1,26 @@
+.Popover {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 60px;
+  margin-top: 50px;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  background-color: white;
+}
+
+.Popover-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #444;
+  text-align: left;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+
+.Popover-button:last-child {
+  border: none;
+}
