@@ -1,0 +1,6 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders popover or nothing if not visible 1`] = `
+"Snapshot Diff:
+  Comparing two different types of values. Expected object but received null."
+`;
