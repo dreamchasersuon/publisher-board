@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`redux handling settings actions to set active user action set active user 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "user": Object {
+        "user_id": "Huan",
+        "user_name": "Don",
+      },
+    },
+    "type": "settings/setActiveUser",
+  },
+]
+`;
+
+exports[`redux handling settings actions to set active user reducer should handle setActiveUser action 1`] = `
+Object {
+  "isRefresh": false,
+  "transactions": Array [],
+  "user": Object {
+    "user_id": "Huan",
+    "user_name": "Don",
+  },
+}
+`;
+
+exports[`redux handling settings actions to set isRefresh action set refresh to true 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "refresh": true,
+    },
+    "type": "settings/setIsRefresh",
+  },
+]
+`;
+
+exports[`redux handling settings actions to set isRefresh reducer should handle setIsRefresh action 1`] = `
+Object {
+  "isRefresh": true,
+  "transactions": Array [],
+  "user": null,
+}
+`;
+
+exports[`redux handling settings actions to set transactions action set transactions 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "transactions": Array [
+        Object {
+          "amount": 3000,
+          "id": 1,
+        },
+        Object {
+          "amount": 3000,
+          "id": 2,
+        },
+      ],
+    },
+    "type": "settings/setTransactions",
+  },
+]
+`;
+
+exports[`redux handling settings actions to set transactions reducer should handle setTransactions action 1`] = `
+Object {
+  "isRefresh": false,
+  "transactions": Array [
+    Object {
+      "amount": 3000,
+      "id": 1,
+    },
+    Object {
+      "amount": 3000,
+      "id": 2,
+    },
+  ],
+  "user": null,
+}
+`;

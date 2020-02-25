@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`redux set and remove errors action with error 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "e": Object {
+        "http_status_code": "422",
+        "message": "Invalid request data",
+      },
+    },
+    "type": "errors/setError",
+  },
+]
+`;
+
+exports[`redux set and remove errors reducer should handle removeError action 1`] = `Array []`;
+
+exports[`redux set and remove errors reducer should handle setError action 1`] = `
+Array [
+  Object {
+    "http_status_code": "400",
+    "message": "Network error",
+  },
+]
+`;

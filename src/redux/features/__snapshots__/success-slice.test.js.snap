@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`redux set and remove success messages action with success message 1`] = `
+Array [
+  Object {
+    "payload": Object {
+      "message": "User vasyan_13 updated",
+    },
+    "type": "success/setSuccessMessage",
+  },
+]
+`;
+
+exports[`redux set and remove success messages reducer should handle removeSuccessMessage action 1`] = `Array []`;
+
+exports[`redux set and remove success messages reducer should handle setSuccessMessage action 1`] = `
+Array [
+  "User vasyan_13 updated",
+]
+`;
