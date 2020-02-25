@@ -1,0 +1,76 @@
+[
+ {
+  "html": {
+   "ancestors": [],
+   "node": "<html/>"
+  },
+  "index": 0
+ },
+ {
+  "html": {
+   "ancestors": [
+    "<header class=\"Header\"></header>",
+    "<div class=\"App\"></div>"
+   ],
+   "node": "<button data-name=\"addUser\" class=\"Header-button\" innertext=\"Add\">Add</button>"
+  },
+  "index": 2
+ },
+ {
+  "css": "[data-testid='name']",
+  "index": 3
+ },
+ {
+  "css": "[data-testid='name']",
+  "index": 4
+ },
+ {
+  "css": "[data-testid='email']",
+  "index": 5
+ },
+ {
+  "css": "[data-testid='email']",
+  "index": 6
+ },
+ {
+  "css": "[data-testid='custom']",
+  "index": 7
+ },
+ {
+  "css": "[data-testid='email']",
+  "index": 8
+ },
+ {
+  "css": "[data-testid='email']",
+  "index": 9
+ },
+ {
+  "css": "[data-testid='custom']",
+  "index": 10
+ },
+ {
+  "css": "[data-testid='custom']",
+  "index": 11
+ },
+ {
+  "css": "[data-testid='modal-perform']",
+  "index": 12
+ },
+ {
+  "html": {
+   "ancestors": [
+    "<div class=\"Snackbar\"></div>",
+    "<div class=\"App\"></div>"
+   ],
+   "node": "<div class=\"Snackbar-close\" innertext=\"X\">X</div>"
+  },
+  "index": 13
+ },
+ {
+  "html": {
+   "ancestors": [],
+   "node": "<html/>"
+  },
+  "index": 14
+ }
+]

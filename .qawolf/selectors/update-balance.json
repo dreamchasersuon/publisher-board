@@ -1,0 +1,54 @@
+[
+ {
+  "css": "[data-testid='popover-button']",
+  "index": 0
+ },
+ {
+  "css": "[data-testid='update-balance']",
+  "index": 1
+ },
+ {
+  "css": "[data-testid='amount']",
+  "index": 2
+ },
+ {
+  "html": {
+   "ancestors": [
+    "<div class=\"Form-input_wrapper\"></div>",
+    "<form class=\"Form\"></form>"
+   ],
+   "node": "<label class=\"Form-label\" for=\"email\" innertext=\"Comment\">Comment</label>"
+  },
+  "index": 3
+ },
+ {
+  "css": "[data-testid='amount']",
+  "index": 4
+ },
+ {
+  "css": "[data-testid='amount']",
+  "index": 5
+ },
+ {
+  "css": "[data-testid='comment']",
+  "index": 6
+ },
+ {
+  "css": "[data-testid='comment']",
+  "index": 7
+ },
+ {
+  "css": "[data-testid='modal-perform']",
+  "index": 8
+ },
+ {
+  "html": {
+   "ancestors": [
+    "<div class=\"Snackbar\"></div>",
+    "<div class=\"App\"></div>"
+   ],
+   "node": "<div class=\"Snackbar-close\" innertext=\"X\">X</div>"
+  },
+  "index": 9
+ }
+]

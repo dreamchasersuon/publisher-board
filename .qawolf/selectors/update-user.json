@@ -1,0 +1,60 @@
+[
+ {
+  "css": "[data-testid='popover-button']",
+  "index": 0
+ },
+ {
+  "css": "[data-testid='update-user']",
+  "index": 1
+ },
+ {
+  "css": "[data-testid='update-name']",
+  "index": 2
+ },
+ {
+  "css": "[data-testid='update-name']",
+  "index": 3
+ },
+ {
+  "css": "[data-testid='update-custom']",
+  "index": 4
+ },
+ {
+  "css": "[data-testid='update-custom']",
+  "index": 5
+ },
+ {
+  "css": "[data-testid='modal-perform']",
+  "index": 6
+ },
+ {
+  "html": {
+   "ancestors": [
+    "<td></td>",
+    "<tr></tr>"
+   ],
+   "node": "<div class=\"TableBody-cell\" innertext=\"jhlkjohn.smith_\">jhlkjohn.smith_</div>"
+  },
+  "index": 7
+ },
+ {
+  "html": {
+   "ancestors": [
+    "<td></td>",
+    "<tr></tr>"
+   ],
+   "node": "<div class=\"TableBody-cell\" innertext=\"jhlkjohn.smith_\">jhlkjohn.smith_</div>"
+  },
+  "index": 8
+ },
+ {
+  "html": {
+   "ancestors": [
+    "<div class=\"Snackbar\"></div>",
+    "<div class=\"App\"></div>"
+   ],
+   "node": "<div class=\"Snackbar-close\" innertext=\"X\">X</div>"
+  },
+  "index": 9
+ }
+]

@@ -1,0 +1,40 @@
+[
+ {
+  "css": "[data-testid='popover-button']",
+  "index": 0
+ },
+ {
+  "css": "[data-testid='get-transactions']",
+  "index": 1
+ },
+ {
+  "css": "[data-testid='dateFrom']",
+  "index": 2
+ },
+ {
+  "css": "[data-testid='dateFrom']",
+  "index": 3
+ },
+ {
+  "css": "[data-testid='dateTo']",
+  "index": 4
+ },
+ {
+  "css": "[data-testid='dateTo']",
+  "index": 5
+ },
+ {
+  "css": "[data-testid='modal-perform']",
+  "index": 6
+ },
+ {
+  "html": {
+   "ancestors": [
+    "<footer class=\"Modal-footer\"></footer>",
+    "<div class=\"Modal\"></div>"
+   ],
+   "node": "<button type=\"button\" class=\"Modal-action\" innertext=\"CLOSE\">close</button>"
+  },
+  "index": 7
+ }
+]
