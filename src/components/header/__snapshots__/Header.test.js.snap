@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders header with title and caption 1`] = `
+<header
+  className="Header"
+>
+  <div
+    className="Header-title"
+  >
+    <h1>
+      Players
+    </h1>
+    <span>
+      manage users of your game
+    </span>
+  </div>
+  <button
+    className="Header-button"
+    data-name="addUser"
+  >
+    Add
+  </button>
+</header>
+`;

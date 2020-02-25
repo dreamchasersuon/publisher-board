@@ -20,13 +20,3 @@ h1 {
 .Header-title span {
   color: #666;
 }
-
-.Header-button {
-  border: 1px solid #e5e5e5;
-  border-radius: 4px;
-  color: #666;
-  background-color: transparent;
-  margin-left: auto;
-  outline: none;
-  cursor: pointer;
-}
