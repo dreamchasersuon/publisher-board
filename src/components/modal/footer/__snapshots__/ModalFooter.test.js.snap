@@ -5,7 +5,7 @@ exports[`renders modal footer with different buttons 1`] = `
 - <ModalFooter btnCloseLabel=\\"close\\" />
 + <ModalFooter btnCloseLabel=\\"close\\" btnProceedLabel=\\"update\\" />
 
-@@ -5,6 +5,12 @@
+@@ -5,6 +5,13 @@
       className=\\"Modal-action\\"
       type=\\"button\\"
     >
@@ -13,6 +13,7 @@ exports[`renders modal footer with different buttons 1`] = `
     </button>
 +   <button
 +     className=\\"Modal-action\\"
++     data-testid=\\"modal-perform\\"
 +     type=\\"button\\"
 +   >
 +     update

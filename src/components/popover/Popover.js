@@ -44,5 +44,5 @@ export default function Popover({
 Popover.propTypes = {
   handleOnBlurPopover: PropTypes.func,
   handleOpenModal: PropTypes.func,
-  popoverRef: PropTypes.element,
+  popoverRef: PropTypes.object,
 };

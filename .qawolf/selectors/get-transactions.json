@@ -36,5 +36,40 @@
    "node": "<button type=\"button\" class=\"Modal-action\" innertext=\"CLOSE\">close</button>"
   },
   "index": 7
+ },
+ {
+  "css": "[data-testid='popover-button']",
+  "index": 16
+ },
+ {
+  "css": "[data-testid='get-transactions']",
+  "index": 17
+ },
+ {
+  "css": "[data-testid='dateFrom']",
+  "index": 18
+ },
+ {
+  "css": "[data-testid='dateFrom']",
+  "index": 19
+ },
+ {
+  "css": "[data-testid='dateTo']",
+  "index": 20
+ },
+ {
+  "css": "[data-testid='dateTo']",
+  "index": 21
+ },
+ {
+  "css": "[data-testid='modal-perform']",
+  "index": 22
+ },
+ {
+  "html": {
+   "ancestors": [],
+   "node": "<html/>"
+  },
+  "index": 23
  }
 ]

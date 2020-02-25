@@ -5,7 +5,7 @@ exports[`renders modal with form selected by name or nothing to show message 1`]
 - <Modal name=\\"addUser\\" onClose={[Function mockConstructor]} />
 + <Modal onClose={[Function mockConstructor]} />
 
-@@ -10,41 +10,28 @@
+@@ -10,42 +10,28 @@
     >
       <header
         className=\\"Modal-header\\"
@@ -43,6 +43,7 @@ exports[`renders modal with form selected by name or nothing to show message 1`]
 -       </button>
 -       <button
 -         className=\\"Modal-action\\"
+-         data-testid=\\"modal-perform\\"
 -         onClick={[Function handleOnSubmitForm]}
 -         type=\\"button\\"
 -       >

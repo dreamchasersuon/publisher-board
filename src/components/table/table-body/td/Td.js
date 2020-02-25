@@ -27,5 +27,5 @@ export default function Td({ isDate, value }) {
 
 Td.propTypes = {
   isDate: PropTypes.bool,
-  value: PropTypes.string,
+  value: PropTypes.any,
 };

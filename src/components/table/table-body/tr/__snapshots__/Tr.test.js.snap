@@ -9,18 +9,21 @@ exports[`renders table body row open popover 1`] = `
   <button
     class="Popover-button"
     data-name="updateUser"
+    data-testid="update-user"
   >
     Update User
   </button>
   <button
     class="Popover-button"
     data-name="getTransactions"
+    data-testid="get-transactions"
   >
     Get Transactions
   </button>
   <button
     class="Popover-button"
     data-name="updateBalance"
+    data-testid="update-balance"
   >
     Update Balance
   </button>

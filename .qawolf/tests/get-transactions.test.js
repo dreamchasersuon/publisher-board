@@ -1,7 +1,7 @@
 const { launch } = require('qawolf');
 const selectors = require('../selectors/get-transactions');
 
-describe('should get transactions for period 12.02.2020 - 23.02.2020 from first user', () => {
+describe('should get transactions and receive feedback message', () => {
   let browser;
 
   beforeAll(async () => {
@@ -23,10 +23,7 @@ describe('should get transactions for period 12.02.2020 - 23.02.2020 from first 
   });
 
   it('can type into "dateFrom" input', async () => {
-    await browser.type(
-      { css: "[data-testid='dateFrom']" },
-      '↓Digit1↓Digit2↑Digit1↑Digit2↓Digit0↓Digit2↑Digit0↑Digit2↓Digit1↑Digit1↓Digit2↑Digit2↓Backspace↑Backspace↓Backspace↑Backspace↓Digit2↑Digit2↓Digit0↑Digit0↓Digit2↓Digit0↑Digit2↑Digit0',
-    );
+    await browser.type({ css: "[data-testid='dateFrom']" }, '2020-01-02');
   });
 
   it('can click "dateTo" input', async () => {
@@ -34,14 +31,14 @@ describe('should get transactions for period 12.02.2020 - 23.02.2020 from first 
   });
 
   it('can type into "dateTo" input', async () => {
-    await browser.type({ css: "[data-testid='dateTo']" }, '23022020');
+    await browser.type({ css: "[data-testid='dateTo']" }, '2020-02-03');
   });
 
   it('can click "GET" button', async () => {
     await browser.click({ css: "[data-testid='modal-perform']" });
   });
 
-  it('can click "CLOSE" button', async () => {
-    await browser.click(selectors[7]);
+  it('can scroll', async () => {
+    await browser.scroll(selectors[15], { x: 0, y: 70 });
   });
 });

@@ -5,6 +5,11 @@ describe('should add user with valid email', () => {
   let browser;
 
   beforeAll(async () => {
+    jest.mock('axios', () => {
+      return {
+        get: () => ({ status: 'OK' }),
+      };
+    });
     browser = await launch({ url: 'http://localhost:3000/' });
   });
 

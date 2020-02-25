@@ -110,7 +110,7 @@ export default function FormUpdateUser({ formRef, onClose, setIsFetching }) {
 }
 
 FormUpdateUser.propTypes = {
-  formRef: PropTypes.element,
+  formRef: PropTypes.object,
   onClose: PropTypes.func,
   setIsFetching: PropTypes.func,
 };

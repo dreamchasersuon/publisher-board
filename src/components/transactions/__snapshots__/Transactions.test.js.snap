@@ -7,6 +7,7 @@ exports[`renders transactions or not found if empty 1`] = `
 
   <div
     className=\\"Transactions\\"
+    data-testid=\\"modal-transactions\\"
 - >
 -   <div
 -     className=\\"Transaction\\"

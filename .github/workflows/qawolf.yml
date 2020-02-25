@@ -36,7 +36,7 @@ jobs:
       # - name: Start local server
       #   run: npm run start & npx wait-on http://localhost:3000
 
-      - run: yarn e2e
+      - run: QAW_HEADLESS=true yarn e2e
         env:
           QAW_ARTIFACT_PATH: ${{ github.workspace }}/artifacts
         #   # configure tests with environment variables

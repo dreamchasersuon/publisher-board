@@ -56,5 +56,27 @@
    "node": "<div class=\"Snackbar-close\" innertext=\"X\">X</div>"
   },
   "index": 9
+ },
+ {
+  "css": "[data-testid='popover-button']",
+  "index": 20
+ },
+ {
+  "css": "[data-testid='update-user']",
+  "index": 21
+ },
+ {
+  "css": "[data-testid='modal-perform']",
+  "index": 22
+ },
+ {
+  "html": {
+   "ancestors": [
+    "<div class=\"Snackbar\"></div>",
+    "<div class=\"App\"></div>"
+   ],
+   "node": "<div class=\"Snackbar-close\" innertext=\"X\">X</div>"
+  },
+  "index": 23
  }
 ]

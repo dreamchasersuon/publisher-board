@@ -1,3 +1,4 @@
+const axios = require('axios');
 const { launch } = require('qawolf');
 const selectors = require('../selectors/update-balance');
 

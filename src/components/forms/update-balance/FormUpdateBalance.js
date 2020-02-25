@@ -91,7 +91,7 @@ export default function FormUpdateBalance({ formRef, onClose, setIsFetching }) {
 }
 
 FormUpdateBalance.propTypes = {
-  formRef: PropTypes.element,
+  formRef: PropTypes.object,
   onClose: PropTypes.func,
   setIsFetching: PropTypes.func,
 };

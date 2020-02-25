@@ -17,6 +17,6 @@ export default function Button({ onPress, label, testId }) {
 
 Button.propTypes = {
   onPress: PropTypes.func,
-  label: PropTypes.string,
+  label: PropTypes.any,
   testId: PropTypes.string,
 };

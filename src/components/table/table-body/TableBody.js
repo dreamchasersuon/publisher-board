@@ -6,5 +6,5 @@ export default function TableBody({ children }) {
 }
 
 TableBody.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.array,
 };

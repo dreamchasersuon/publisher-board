@@ -105,7 +105,7 @@ export default function FormAddUser({ formRef, onClose, setIsFetching }) {
 }
 
 FormAddUser.propTypes = {
-  formRef: PropTypes.element,
+  formRef: PropTypes.object,
   onClose: PropTypes.func,
   setIsFetching: PropTypes.func,
 };

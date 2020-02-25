@@ -11,23 +11,24 @@ import toRFC3339Date from '../../../utils/toRFC3339Date';
 import { setSuccessMessage } from '../../../redux/features/successFeatureSlice';
 
 const validationSchema = Yup.object({
-  dateFrom: Yup.date()
+  dateFrom: Yup.string()
     .typeError('Expected format is YYYY-MM-DD')
     // fallback validation for IE and Safari
-    .test(
-      'valid-date',
-      'Expected format is YYYY-MM-DD',
-      val => new Date(val).toString() !== 'Invalid Date',
-    )
+    .test('valid-date', 'Expected format is YYYY-MM-DD', val => {
+      if (!String(val).includes('-')) {
+        return false;
+      }
+      return new Date(val).toString() !== 'Invalid Date';
+    })
     .required('Required field'),
-  dateTo: Yup.date()
+  dateTo: Yup.string()
     .typeError('Expected format is YYYY-MM-DD')
-    .test(
-      'valid-date',
-      'Expected format is YYYY-MM-DD',
-      val => new Date(val).toString() !== 'Invalid Date',
-    )
-    .min(Yup.ref('dateFrom', 'End date should be later than start date'))
+    .test('valid-date', 'Expected format is YYYY-MM-DD', val => {
+      if (!String(val).includes('-')) {
+        return false;
+      }
+      return new Date(val).toString() !== 'Invalid Date';
+    })
     .required('Required field'),
 });
 
@@ -76,9 +77,7 @@ export default function FormGetTransactions({
             </label>
             <input
               data-testid="dateFrom"
-              type="date"
-              pattern="\d{4}-\d{2}-\d{2}"
-              title="Should be date"
+              type="text"
               className="Form-input"
               name="dateFrom"
               placeholder="Period start"
@@ -96,8 +95,7 @@ export default function FormGetTransactions({
             </label>
             <input
               data-testid="dateTo"
-              type="date"
-              pattern="\d{4}-\d{2}-\d{2}"
+              type="text"
               className="Form-input"
               name="dateTo"
               placeholder="Period end"
@@ -116,7 +114,7 @@ export default function FormGetTransactions({
 }
 
 FormGetTransactions.propTypes = {
-  formRef: PropTypes.element,
+  formRef: PropTypes.object,
   onClose: PropTypes.func,
   setIsFetching: PropTypes.func,
 };
