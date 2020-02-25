@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders transactions or not found if empty 1`] = `
+"Snapshot Diff:
+- <Provider store={{\\"clearActions\\": [Function clearActions], \\"dispatch\\": [Function dispatch], \\"getActions\\": [Function getActions], \\"getState\\": [Function getState], \\"replaceReducer\\": [Function replaceReducer], \\"subscribe\\": [Function subscribe]}}><Transactions /></Provider>
++ <Provider store={{\\"clearActions\\": [Function clearActions], \\"dispatch\\": [Function dispatch], \\"getActions\\": [Function getActions], \\"getState\\": [Function getState], \\"replaceReducer\\": [Function replaceReducer], \\"subscribe\\": [Function subscribe]}}><Transactions /></Provider>
+
+  <div
+    className=\\"Transactions\\"
+- >
+-   <div
+-     className=\\"Transaction\\"
+-   >
+-     <span
+-       className=\\"Transaction-date\\"
+-     >
+-       28 Nov 2018
+-     </span>
+-     <div
+-       className=\\"Transaction-item\\"
+-     >
+-       <span
+-         className=\\"TransactionItem-name\\"
+-       >
+-         Item2
+-       </span>
+-       <span
+-         className=\\"TransactionItem-amount\\"
+-       >
+-         1
+-       </span>
+-     </div>
+-     <div
+-       className=\\"Transaction-item\\"
+-     >
+-       <span
+-         className=\\"TransactionItem-name\\"
+-       >
+-         Item3
+-       </span>
+-       <span
+-         className=\\"TransactionItem-amount\\"
+-       >
+-         123
+-       </span>
+-     </div>
+-     <div
+-       className=\\"Transaction-comment_and_amount\\"
+-     >
+-       <span
+-         className=\\"Transaction-comment\\"
+  />
+-       <span
+-         className=\\"Transaction-total\\"
+-       >
+-         Total: 
+-         124
+-       </span>
+-     </div>
+-   </div>
+-   <div
+-     className=\\"Transaction\\"
+-   >
+-     <span
+-       className=\\"Transaction-date\\"
+-     >
+-       10 Jan 2017
+-     </span>
+-     <div
+-       className=\\"Transaction-comment_and_amount\\"
+-     >
+-       <span
+-         className=\\"Transaction-comment\\"
+-       >
+-         Update balance
+-       </span>
+-       <span
+-         className=\\"Transaction-total\\"
+-       >
+-         Total: 
+-         1200
+-       </span>
+-     </div>
+-   </div>
+- </div>"
+`;

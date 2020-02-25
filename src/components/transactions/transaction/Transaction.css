@@ -1,0 +1,32 @@
+.Transaction {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.Transaction:last-child {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.Transaction-date {
+  margin-right: auto;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.Transaction-comment_and_amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Transaction-comment {
+  color: #666;
+}
+
+.Transaction-total {
+  font-size: 14px;
+}

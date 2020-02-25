@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders purchased virtual item 1`] = `
+<div
+  className="Transaction-item"
+>
+  <span
+    className="TransactionItem-name"
+  >
+    Snow Drum Machine
+  </span>
+  <span
+    className="TransactionItem-amount"
+  >
+    10
+  </span>
+</div>
+`;

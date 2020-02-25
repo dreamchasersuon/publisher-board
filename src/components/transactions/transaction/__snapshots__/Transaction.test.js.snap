@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders purchase transaction or update balance 1`] = `
+"Snapshot Diff:
+- <Transaction transaction={{\\"amount\\": 12, \\"comment\\": null, \\"date\\": \\"2018-12-28T15:02:29+03:00\\", \\"operation_id\\": 178199125, \\"virtual_items\\": [{\\"amount\\": 1, \\"virtual_item\\": {\\"localized_name\\": \\"Item2\\", \\"sku\\": \\"002\\"}}, {\\"amount\\": 123, \\"virtual_item\\": {\\"localized_name\\": \\"Item3\\", \\"sku\\": \\"003\\"}}]}} />
++ <Transaction transaction={{\\"amount\\": 1200, \\"comment\\": \\"Update balance\\", \\"date\\": \\"2017-02-10T15:02:29+03:00\\", \\"operation_id\\": 828328435}} />
+
+@@ -2,49 +2,23 @@
+    className=\\"Transaction\\"
+  >
+    <span
+      className=\\"Transaction-date\\"
+    >
+-     28 Nov 2018
++     10 Jan 2017
+    </span>
+    <div
+-     className=\\"Transaction-item\\"
++     className=\\"Transaction-comment_and_amount\\"
+    >
+      <span
+-       className=\\"TransactionItem-name\\"
++       className=\\"Transaction-comment\\"
+      >
+-       Item2
+-     </span>
+-     <span
+-       className=\\"TransactionItem-amount\\"
+-     >
+-       1
+-     </span>
+-   </div>
+-   <div
+-     className=\\"Transaction-item\\"
+-   >
+-     <span
+-       className=\\"TransactionItem-name\\"
+-     >
+-       Item3
++       Update balance
+      </span>
+      <span
+-       className=\\"TransactionItem-amount\\"
+-     >
+-       123
+-     </span>
+-   </div>
+-   <div
+-     className=\\"Transaction-comment_and_amount\\"
+-   >
+-     <span
+-       className=\\"Transaction-comment\\"
+-     />
+-     <span
+        className=\\"Transaction-total\\"
+      >
+        Total: 
+-       124
++       1200
+      </span>
+    </div>
+  </div>"
+`;

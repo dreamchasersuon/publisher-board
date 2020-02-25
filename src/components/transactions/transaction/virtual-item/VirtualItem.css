@@ -1,0 +1,14 @@
+.Transaction-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.TransactionItem-name {
+  font-size: 12px;
+}
+
+.TransactionItem-amount {
+  font-size: 12px;
+  color: #666;
+}
