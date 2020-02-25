@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders modal buttons with different states 1`] = `
+"Snapshot Diff:
+- <Button className=\\"Header-button\\" dataName=\\"addUser\\" onPress={[Function mockConstructor]} title=\\"Add\\" />
++ <Button className=\\"Popover-button\\" dataName=\\"updateUser\\" onPress={[Function mockConstructor]} title=\\"Update User\\" />
+
+  <button
+-   className=\\"Header-button\\"
+-   data-name=\\"addUser\\"
++   className=\\"Popover-button\\"
++   data-name=\\"updateUser\\"
+    onMouseDown={[Function mockConstructor]}
+  >
+-   Add
++   Update User
+  </button>"
+`;

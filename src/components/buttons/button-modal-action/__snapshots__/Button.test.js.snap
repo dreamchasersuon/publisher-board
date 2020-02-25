@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders modal action button with given label and action 1`] = `
+<button
+  className="Modal-action"
+  onClick={[MockFunction]}
+  type="button"
+>
+  close
+</button>
+`;

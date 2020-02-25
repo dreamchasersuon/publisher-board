@@ -1,0 +1,36 @@
+.Header-button {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  color: #666;
+  background-color: transparent;
+  margin-left: auto;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.Header-button:hover {
+  border-color: black;
+  color: black;
+}
+
+.Popover-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #444;
+  text-align: left;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.Popover-button:last-child {
+  border: none;
+}
+
+.Popover-button:hover {
+  background-color: #fafafa;
+}
