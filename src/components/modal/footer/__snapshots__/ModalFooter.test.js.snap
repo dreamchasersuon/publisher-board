@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders modal footer with different buttons 1`] = `
+"Snapshot Diff:
+- <ModalFooter btnCloseLabel=\\"close\\" />
++ <ModalFooter btnCloseLabel=\\"close\\" btnProceedLabel=\\"update\\" />
+
+@@ -5,6 +5,12 @@
+      className=\\"Modal-action\\"
+      type=\\"button\\"
+    >
+      close
+    </button>
++   <button
++     className=\\"Modal-action\\"
++     type=\\"button\\"
++   >
++     update
++   </button>
+  </footer>"
+`;

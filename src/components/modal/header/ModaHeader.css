@@ -1,0 +1,14 @@
+.Modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.Modal-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}

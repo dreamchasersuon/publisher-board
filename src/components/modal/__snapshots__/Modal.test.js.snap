@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders modal with form selected by name or nothing to show message 1`] = `
+"Snapshot Diff:
+- <Modal name=\\"addUser\\" onClose={[Function mockConstructor]} />
++ <Modal onClose={[Function mockConstructor]} />
+
+@@ -10,41 +10,28 @@
+    >
+      <header
+        className=\\"Modal-header\\"
+      >
+        <h2>
+-         Add User
++         Body not found
+        </h2>
+      </header>
+      <main
+        className=\\"Modal-body\\"
+      >
+-       <FormAddUser
+-         formRef={
+-           Object {
+-             \\"current\\": null,
+-           }
+-         }
+-         onClose={[Function mockConstructor]}
+-         setIsFetching={[Function bound dispatchAction]}
+-       />
++       <span>
++         Nothing to show
++       </span>
+      </main>
+      <footer
+        className=\\"Modal-footer\\"
+      >
+        <button
+          className=\\"Modal-action\\"
+          onClick={[Function mockConstructor]}
+          type=\\"button\\"
+        >
+-         cancel
+-       </button>
+-       <button
+-         className=\\"Modal-action\\"
+-         onClick={[Function handleOnSubmitForm]}
+-         type=\\"button\\"
+-       >
+-         add
++         close
+        </button>
+      </footer>
+    </div>
+  </div>"
+`;

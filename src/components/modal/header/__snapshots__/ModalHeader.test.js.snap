@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders modal header with given title 1`] = `
+<header
+  className="Modal-header"
+>
+  <h2>
+    Update User
+  </h2>
+</header>
+`;
