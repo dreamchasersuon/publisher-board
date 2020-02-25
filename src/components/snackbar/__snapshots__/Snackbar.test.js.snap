@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders error or success snack alert 1`] = `
+"Snapshot Diff:
+- <Snackbar message=\\"Something went wrong\\" onClose={[Function mockConstructor]} type=\\"error\\" />
++ <Snackbar message=\\"Operation succeed\\" onClose={[Function mockConstructor]} type=\\"success\\" />
+
+@@ -1,12 +1,12 @@
+  <div
+    className=\\"Snackbar\\"
+  >
+    <span
+-     className=\\"Snackbar-title error\\"
++     className=\\"Snackbar-title success\\"
+    >
+-     Something went wrong
++     Operation succeed
+    </span>
+    <div
+      className=\\"Snackbar-close\\"
+      onClick={[Function mockConstructor]}
+    >"
+`;
