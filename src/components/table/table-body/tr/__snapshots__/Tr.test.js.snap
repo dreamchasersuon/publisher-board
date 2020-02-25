@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders table body row open popover 1`] = `
+<div
+  class="Popover"
+  data-testid="popover"
+  tabindex="0"
+>
+  <button
+    class="Popover-button"
+    data-name="updateUser"
+  >
+    Update User
+  </button>
+  <button
+    class="Popover-button"
+    data-name="getTransactions"
+  >
+    Get Transactions
+  </button>
+  <button
+    class="Popover-button"
+    data-name="updateBalance"
+  >
+    Update Balance
+  </button>
+</div>
+`;
+
+exports[`renders table body row open popover 2`] = `
+Array [
+  Object {
+    "payload": Object {
+      "user": Object {
+        "balance": "9999999",
+        "email": "saint@malkovich.com",
+        "enabled": true,
+        "register_date": "2019-01-30T10:24:53+00:00",
+        "user_custom": "Malkovich",
+        "user_id": 1,
+        "user_name": "John",
+      },
+    },
+    "type": "settings/setActiveUser",
+  },
+]
+`;

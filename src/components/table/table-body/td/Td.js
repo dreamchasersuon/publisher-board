@@ -1,25 +1,31 @@
 import React from 'react';
-import './Th.css';
+import PropTypes from 'prop-types';
+import './Td.css';
 
-function calcDaysFromRegistration(date) {
+export function calcDaysFromRegistration(date) {
   const dayInMs = 24 * 60 * 60 * 1000;
   const now = new Date();
   const registered = new Date(date);
   return Math.round(Math.abs((now - registered) / dayInMs));
 }
 
-export default function Th({ isDate, value }) {
+export default function Td({ isDate, value }) {
   if (isDate) {
     return (
-      <th>
+      <td>
         <div className="TableBody-cell">{calcDaysFromRegistration(value)}d</div>
-      </th>
+      </td>
     );
   } else {
     return (
-      <th>
+      <td>
         <div className="TableBody-cell">{value || '—'}</div>
-      </th>
+      </td>
     );
   }
 }
+
+Td.propTypes = {
+  isDate: PropTypes.bool,
+  value: PropTypes.string,
+};

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with date or with simple value, calc date before renders table body cell with date or simple value 1`] = `
+"Snapshot Diff:
+- <Td isDate={true} value=\\"2019-01-30T10:24:53+00:00\\" />
++ <Td value=\\"123442\\" />
+
+  <td>
+    <div
+      className=\\"TableBody-cell\\"
+    >
+-     391
+-     d
++     123442
+    </div>
+  </td>"
+`;

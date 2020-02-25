@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders table footer with spinner or disabled 1`] = `
+"Snapshot Diff:
+- <TableFooter isLoadingMore={true} loadMore={[Function mockConstructor]} />
++ <TableFooter isReachingEnd={true} loadMore={[Function mockConstructor]} />
+
+@@ -3,14 +3,13 @@
+      <td
+        colSpan=\\"100%\\"
+      >
+        <button
+          className=\\"TableFooter-button\\"
++         disabled={true}
+          onClick={[Function mockConstructor]}
+        >
+-         <i
+-           className=\\"fas fa-spinner fa-spin\\"
+-         />
++         LOAD MORE
+        </button>
+      </td>
+    </tr>
+  </tfoot>"
+`;
