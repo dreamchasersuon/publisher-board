@@ -10,7 +10,7 @@ import FormGetTransactions from '../forms/get-transactions/FormGetTransactions';
 import Transactions from '../transactions/Transactions';
 import './Modal.css';
 
-const forms = {
+const formsMap = {
   updateUser: {
     render(props) {
       return <FormUpdateUser {...props} />;
@@ -51,20 +51,7 @@ const forms = {
     btnProceedLabel: null,
     title: 'Transactions',
   },
-  get(obj, name) {
-    return this.hasOwnProperty(name)
-      ? this[name]
-      : {
-          render() {
-            return <span>Nothing to show</span>;
-          },
-          btnCloseLabel: 'close',
-          title: 'Body not found',
-        };
-  },
 };
-
-const formsMap = new Proxy({}, forms);
 
 export default function Modal({ name, onClose }) {
   const [isFetching, setIsFetching] = useState(false);
@@ -79,16 +66,24 @@ export default function Modal({ name, onClose }) {
     <div className="Overlay">
       <div onClick={onClose} className="Overlay-backdrop" />
       <div className="Modal">
-        <ModalHeader title={formsMap[name].title} />
+        <ModalHeader
+          title={formsMap[name] ? formsMap[name].title : 'Body not found'}
+        />
         <ModalBody>
-          {formsMap[name].render({ formRef, onClose, setIsFetching })}
+          {formsMap[name] ? (
+            formsMap[name].render({ formRef, onClose, setIsFetching })
+          ) : (
+            <span>Nothing to show</span>
+          )}
         </ModalBody>
         <ModalFooter
           isLoading={isFetching}
           handleOnSubmitForm={handleOnSubmitForm}
           handleOnCloseModal={onClose}
-          btnCloseLabel={formsMap[name].btnCloseLabel}
-          btnProceedLabel={formsMap[name].btnProceedLabel}
+          btnCloseLabel={
+            formsMap[name] ? formsMap[name].btnCloseLabel : 'close'
+          }
+          btnProceedLabel={formsMap[name] && formsMap[name].btnProceedLabel}
         />
       </div>
     </div>

@@ -22,7 +22,6 @@ exports[`renders table body row open popover 1`] = `
   </button>
   <button
     class="Popover-button"
-    data-name="updateBalance"
     data-testid="update-balance"
   >
     Update Balance
