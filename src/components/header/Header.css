@@ -1,6 +1,7 @@
 .Header {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   padding: 50px 50px 10px 50px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -13,6 +14,7 @@ h1 {
 
 .Header-title {
   display: flex;
+  margin-right: auto;
   flex-direction: column;
   margin-bottom: 20px;
 }
