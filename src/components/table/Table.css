@@ -3,3 +3,47 @@ table {
   margin: 20px 50px;
   border-spacing: 0;
 }
+
+/*
+    Table adaptive. Hide elements
+    one-by-one.
+ */
+@media screen and (max-width: 1020px) {
+  .TableHead tr th:nth-last-child(2) {
+    display: none;
+  }
+
+  tbody tr td:nth-last-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .TableHead tr th:nth-last-child(5) {
+    display: none;
+  }
+
+  tbody tr td:nth-last-child(5) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .TableHead tr th:first-child {
+    display: none;
+  }
+
+  tbody tr td:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .TableHead tr th:nth-last-child(3) {
+    display: none;
+  }
+
+  tbody tr td:nth-last-child(3) {
+    display: none;
+  }
+}
