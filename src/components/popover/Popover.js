@@ -33,6 +33,7 @@ export default function Popover({
       <Button
         testId="update-balance"
         title="Update Balance"
+        dataName="updateBalance"
         onPress={handleOpenModal}
         className="Popover-button"
       />
