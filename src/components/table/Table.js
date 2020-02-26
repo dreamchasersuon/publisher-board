@@ -16,6 +16,10 @@ export default function Table({ handleOnOpenModal }) {
   const { isRefresh } = useSelector(state => state.settings);
   const [offsetMultiplier, setOffsetMultiplier] = useState(1);
 
+  /*
+       Fetch users and display
+       them like pages using SWR hook.
+   */
   const {
     pages,
     isLoadingMore,
@@ -49,9 +53,15 @@ export default function Table({ handleOnOpenModal }) {
     },
 
     ({ data }) => {
+      /*
+           Stop execution if
+           returned value is redux action.
+       */
       if (data.payload) {
         return null;
       }
+
+      // Multiply offset on each fetching
       setOffsetMultiplier(offsetMultiplier + 1);
       return data && data.data.length
         ? data.data.length * offsetMultiplier
@@ -60,8 +70,13 @@ export default function Table({ handleOnOpenModal }) {
     [],
   );
 
+  /*
+       Find refreshIndex to update
+       only changed page.
+       Update only when isRefresh value
+       changed.
+   */
   useEffect(() => {
-    // re-validate only changed offset on update
     if (pageSWRs.length) {
       let refreshIndex;
       pageSWRs.forEach((page, index) => {

@@ -20,8 +20,12 @@ export default function App() {
   const [successMessage, setSuccessMessage] = useState(null);
   const [formName, setFormName] = useState(null);
 
+  /*
+      Open modal with transactions after form
+      submission.
+      Otherwise, close modal.
+   */
   useEffect(() => {
-    // open transactions modal after fetching
     if (transactions.length) {
       document.body.classList.add('Overflow-hidden');
       return setFormName('transactions');
@@ -30,27 +34,49 @@ export default function App() {
     setFormName(null);
   }, [transactions]);
 
+  /*
+      Show snackbar with error
+      if fetched.
+      Remove previous
+      error if errors length > 1.
+   */
   useEffect(() => {
-    // show error from fetcher
     if (errors.length > 1) {
       dispatch(removeError());
     }
     setError(errors[0]);
   }, [dispatch, errors]);
 
+  /*
+      Show snackbar with success
+      message if fetched.
+      Remove previous
+      message if messages length > 1.
+   */
   useEffect(() => {
-    // show success from fetcher
     if (success.length > 1) {
       dispatch(removeSuccessMessage());
     }
     setSuccessMessage(success[0]);
   }, [dispatch, success]);
 
+  /*
+      Open transactions modal,
+      by setting the name of
+      selected form.
+      Hide scrolling in App.
+   */
   function handleOnOpenModal(e) {
     document.body.classList.add('Overflow-hidden');
     setFormName(e.target.getAttribute('data-name'));
   }
 
+  /*
+      Close modal.
+      Remove transactions if
+      currently opened modal
+      contain them.
+   */
   function handleOnCloseModal() {
     if (formName === 'transactions') {
       dispatch(setTransactions({ transactions: [] }));

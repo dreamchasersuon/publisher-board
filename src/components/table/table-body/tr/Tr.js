@@ -11,16 +11,30 @@ export default function Tr({ users, user, handleOnOpenModal }) {
   const [activeUserId, setActiveUserId] = useState(null);
   const popoverRef = useRef(null);
 
+  /*
+        Open popover using ref,
+        when userId was set.
+   */
   useEffect(() => {
     if (activeUserId) {
       popoverRef.current.focus();
     }
   }, [activeUserId]);
 
+  /*
+        Remove userId, when popover
+        is blurred.
+   */
   function handleOnBlurPopover() {
     setActiveUserId(null);
   }
 
+  /*
+        Set userId, selected by clicking on
+        row's popover button.
+        Save activeUser to redux to perform
+        operations in forms later on.
+   */
   function onClickActions(userId) {
     if (userId === activeUserId) {
       return setActiveUserId(null);
