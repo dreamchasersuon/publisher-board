@@ -5,7 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `yarn start`
-starts project on localhost:3000
+starts project on localhost:3000 with default URL to api
+> Note: to use with [symfony backend](https://github.com/dreamchasersuon/backend-publisher-board) you need to override env variable - `REACT_APP_API_URL=http://symfony.localhost yarn start`
 ### `yarn test`
 unit tests for components
 ### `yarn build`
