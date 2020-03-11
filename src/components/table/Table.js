@@ -13,7 +13,7 @@ export default function Table({ handleOnOpenModal }) {
   const dispatch = useDispatch();
   const { user } = useSelector(state => state.settings);
   const { isRefresh } = useSelector(state => state.settings);
-  const [offsetMultiplier, setOffsetMultiplier] = useState(1);
+  const [offsetMultiplier, setOffsetMultiplier] = useState(0);
 
   /*
        Fetch users and display
@@ -64,9 +64,9 @@ export default function Table({ handleOnOpenModal }) {
       }
 
       // Multiply offset on each fetching
-      setOffsetMultiplier(offsetMultiplier + 1);
+      setOffsetMultiplier(offsetMultiplier + data.data.length);
       return data && data.data.length
-        ? data.data.length * offsetMultiplier
+        ? data.data.length + offsetMultiplier
         : null;
     },
     [],

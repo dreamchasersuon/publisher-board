@@ -12,7 +12,11 @@ export default function TableFooter({
     <tfoot>
       <tr>
         <td colSpan="100%">
-          <button onClick={loadMore} className="TableFooter-button">
+          <button
+            disabled={isReachingEnd}
+            onClick={loadMore}
+            className="TableFooter-button"
+          >
             {isLoadingMore ? <Spinner /> : 'LOAD MORE'}
           </button>
         </td>
