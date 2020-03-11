@@ -6,7 +6,6 @@ import TableHead from './table-head/TableHead';
 import TableBody from './table-body/TableBody';
 import TableFooter from './table-footer/TableFooter';
 import Tr from './table-body/tr/Tr';
-import { API_URL } from '../../constants/api';
 import { setIsRefresh } from '../../redux/features/settingsFeatureSlice';
 import './Table.css';
 
@@ -31,7 +30,10 @@ export default function Table({ handleOnOpenModal }) {
     ({ offset, withSWR }) => {
       const { data } = withSWR(
         // eslint-disable-next-line
-        useSWR(`${API_URL}/users?limit=10&offset=${offset || 0}`),
+        useSWR(
+          `${process.env.REACT_APP_API_URL}/users?limit=10&offset=${offset ||
+            0}`,
+        ),
       );
 
       if (!data || data.payload) {

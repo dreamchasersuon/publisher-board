@@ -1,4 +1,6 @@
+/*
 const { launch } = require('qawolf');
+
 const selectors = require('../selectors/get-transactions');
 
 describe('should get transactions and receive feedback message', () => {
@@ -42,3 +44,4 @@ describe('should get transactions and receive feedback message', () => {
     await browser.scroll(selectors[15], { x: 0, y: 70 });
   });
 });
+*/

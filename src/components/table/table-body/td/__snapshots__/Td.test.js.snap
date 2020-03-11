@@ -9,7 +9,7 @@ exports[`renders with date or with simple value, calc date before renders table 
     <div
       className=\\"TableBody-cell\\"
     >
--     392
+-     406
 -     d
 +     123442
     </div>

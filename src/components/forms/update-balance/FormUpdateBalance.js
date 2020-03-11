@@ -4,29 +4,30 @@ import * as Yup from 'yup';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import fetcher from '../../../libs/fetcher';
-import { API_URL } from '../../../constants/api';
 import { setIsRefresh } from '../../../redux/features/settingsFeatureSlice';
 import { setSuccessMessage } from '../../../redux/features/successFeatureSlice';
 import '../Form.css';
 
 const validationSchema = Yup.object({
-  amount: Yup.number().required('Required field'),
+  balance: Yup.number().required('Required field'),
+  /*
   comment: Yup.string()
     .max(255, 'Max length is 255 symbols')
     .required('Required field'),
+    */
 });
 
 export default function FormUpdateBalance({ formRef, onClose, setIsFetching }) {
   const dispatch = useDispatch();
   const { user_id, user_name } = useSelector(state => state.settings.user);
 
-  async function updateUserBalance({ amount, comment }) {
+  async function updateUserBalance({ balance }) {
     setIsFetching(true);
     await fetcher({
-      url: `${API_URL}/users/${user_id}/recharge`,
+      url: `${process.env.REACT_APP_API_URL}/users/${user_id}/recharge`,
       data: {
-        amount,
-        comment,
+        balance,
+        // comment,
       },
       method: 'POST',
     });
@@ -41,8 +42,8 @@ export default function FormUpdateBalance({ formRef, onClose, setIsFetching }) {
   return (
     <Formik
       initialValues={{
-        amount: '',
-        comment: '',
+        balance: '',
+        // comment: '',
       }}
       validationSchema={validationSchema}
       onSubmit={async values => await updateUserBalance(values)}
@@ -52,21 +53,22 @@ export default function FormUpdateBalance({ formRef, onClose, setIsFetching }) {
         <form className="Form">
           <div className="Form-input_wrapper">
             <label className="Form-label" htmlFor="name">
-              Amount
+              balance
             </label>
             <input
-              data-testid="amount"
+              data-testid="balance"
               className="Form-input"
-              name="amount"
+              name="balance"
               placeholder="Virtual currency quantity"
-              {...getFieldProps('amount')}
+              {...getFieldProps('balance')}
             />
-            {touched.amount && errors.amount ? (
-              <div data-testid="errors-amount" className="Input-error">
-                {errors.amount}
+            {touched.balance && errors.balance ? (
+              <div data-testid="errors-balance" className="Input-error">
+                {errors.balance}
               </div>
             ) : null}
           </div>
+          {/*
           <div className="Form-input_wrapper">
             <label className="Form-label" htmlFor="email">
               Comment
@@ -83,7 +85,7 @@ export default function FormUpdateBalance({ formRef, onClose, setIsFetching }) {
                 {errors.comment}
               </div>
             ) : null}
-          </div>
+          </div>*/}
         </form>
       )}
     </Formik>

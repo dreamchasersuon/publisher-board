@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import '../Form.css';
 import fetcher from '../../../libs/fetcher';
-import { API_URL } from '../../../constants/api';
 import { setTransactions } from '../../../redux/features/settingsFeatureSlice';
 import toRFC3339Date from '../../../utils/toRFC3339Date';
 import { setSuccessMessage } from '../../../redux/features/successFeatureSlice';
@@ -46,7 +45,7 @@ export default function FormGetTransactions({
     const isoDateTo = toRFC3339Date(new Date(dateTo));
 
     const transactions = await fetcher(
-      `${API_URL}/users/${user_id}/transactions?datetime_from=${isoDateFrom}&datetime_to=${isoDateTo}`,
+      `${process.env.REACT_APP_API_URL}/users/${user_id}/transactions?datetime_from=${isoDateFrom}&datetime_to=${isoDateTo}`,
     );
     setIsFetching(false);
     if (transactions.length) {

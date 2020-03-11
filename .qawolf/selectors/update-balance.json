@@ -50,5 +50,25 @@
    "node": "<div class=\"Snackbar-close\" innertext=\"X\">X</div>"
   },
   "index": 9
+ },
+ {
+  "css": "[data-testid='popover-button']",
+  "index": 20
+ },
+ {
+  "css": "[data-testid='update-balance']",
+  "index": 21
+ },
+ {
+  "css": "[data-testid='balance']",
+  "index": 22
+ },
+ {
+  "css": "[data-testid='balance']",
+  "index": 23
+ },
+ {
+  "css": "[data-testid='modal-perform']",
+  "index": 24
  }
 ]

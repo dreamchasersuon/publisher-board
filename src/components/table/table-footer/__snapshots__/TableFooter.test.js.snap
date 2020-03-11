@@ -5,13 +5,10 @@ exports[`renders table footer with spinner or disabled 1`] = `
 - <TableFooter isLoadingMore={true} loadMore={[Function mockConstructor]} />
 + <TableFooter isReachingEnd={true} loadMore={[Function mockConstructor]} />
 
-@@ -3,28 +3,13 @@
-      <td
-        colSpan=\\"100%\\"
+@@ -5,26 +5,10 @@
       >
         <button
           className=\\"TableFooter-button\\"
-+         disabled={true}
           onClick={[Function mockConstructor]}
         >
 -         <svg

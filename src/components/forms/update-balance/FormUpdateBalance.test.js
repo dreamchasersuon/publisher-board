@@ -31,15 +31,16 @@ describe('renders update balance form, validate inputs', () => {
   });
 
   test('validate amount input to exist', async () => {
-    const name = 'amount';
+    const name = 'balance';
     const { getByTestId, findByTestId } = renderer;
 
     const input = getByTestId(name);
     fireEvent.blur(input);
-    const validationError = await findByTestId(`errors-amount`);
+    const validationError = await findByTestId(`errors-balance`);
     expect(validationError.innerHTML).toBe('Required field');
   });
 
+  /*
   test('validate comment input to exist', async () => {
     const name = 'comment';
     const { getByTestId, findByTestId } = renderer;
@@ -49,4 +50,5 @@ describe('renders update balance form, validate inputs', () => {
     const validationError = await findByTestId(`errors-comment`);
     expect(validationError.innerHTML).toBe('Required field');
   });
+  */
 });

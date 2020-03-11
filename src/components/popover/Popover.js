@@ -23,6 +23,7 @@ export default function Popover({
         onPress={handleOpenModal}
         className="Popover-button"
       />
+      {/*
       <Button
         testId="get-transactions"
         title="Get Transactions"
@@ -30,6 +31,7 @@ export default function Popover({
         onPress={handleOpenModal}
         className="Popover-button"
       />
+      */}
       <Button
         testId="update-balance"
         title="Update Balance"

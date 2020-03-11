@@ -16,6 +16,12 @@ export default function Td({ isDate, value }) {
         <div className="TableBody-cell">{calcDaysFromRegistration(value)}d</div>
       </td>
     );
+  } else if (typeof value === 'number') {
+    return (
+      <td>
+        <div className="TableBody-cell">{value}</div>
+      </td>
+    );
   } else {
     return (
       <td>

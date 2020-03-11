@@ -4,7 +4,6 @@ import * as Yup from 'yup';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import fetcher from '../../../libs/fetcher';
-import { API_URL } from '../../../constants/api';
 import { setIsRefresh } from '../../../redux/features/settingsFeatureSlice';
 import { setSuccessMessage } from '../../../redux/features/successFeatureSlice';
 import '../Form.css';
@@ -17,19 +16,19 @@ const validationSchema = Yup.object({
 
 export default function FormUpdateUser({ formRef, onClose, setIsFetching }) {
   const dispatch = useDispatch();
-  const { user_id, user_name, email, user_custom, enabled } = useSelector(
+  const { user_id, user_name, email, user_custom /* enabled */ } = useSelector(
     state => state.settings.user,
   );
 
   async function updateUser({ name, email, custom }) {
     setIsFetching(true);
     await fetcher({
-      url: `${API_URL}/users/${user_id}`,
+      url: `${process.env.REACT_APP_API_URL}/users/${user_id}`,
       data: {
         user_name: name,
         email: email,
         user_custom: custom,
-        enabled,
+        // enabled,
       },
       method: 'PUT',
     });

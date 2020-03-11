@@ -3,7 +3,6 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { API_URL } from '../../../constants/api';
 import fetcher from '../../../libs/fetcher';
 import { setSuccessMessage } from '../../../redux/features/successFeatureSlice';
 import '../Form.css';
@@ -20,7 +19,7 @@ export default function FormAddUser({ formRef, onClose, setIsFetching }) {
   async function addNewUser({ name, email, custom }) {
     setIsFetching(true);
     await fetcher({
-      url: `${API_URL}/users`,
+      url: `${process.env.REACT_APP_API_URL}/users`,
       data: {
         user_id: nanoid(),
         user_name: name,
