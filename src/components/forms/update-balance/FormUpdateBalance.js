@@ -53,7 +53,7 @@ export default function FormUpdateBalance({ formRef, onClose, setIsFetching }) {
         <form className="Form">
           <div className="Form-input_wrapper">
             <label className="Form-label" htmlFor="name">
-              balance
+              Amount
             </label>
             <input
               data-testid="balance"
